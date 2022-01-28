@@ -4,7 +4,7 @@ a = int(input())
 b = int(input())
 c = int(input())
 
-if a and b and c > 10:
+if a > 10 and b > 10 and c > 10:
     print(True)
 else:
     print(False)
