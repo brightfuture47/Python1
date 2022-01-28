@@ -1,10 +1,7 @@
-﻿# вводится три числа. если все числа больше 10 то вывести True иначе False
+﻿# является ли год високосным если да то вывести Високосный, если нет то обычный текст
 
-a = int(input())
-b = int(input())
-c = int(input())
-
-if a > 10 and b > 10 and c > 10:
-    print(True)
+year = int(input())
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0: #Проверка кратности
+    print ("Високосный")
 else:
-    print(False)
+    print ("Обычный")
