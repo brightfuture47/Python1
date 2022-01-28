@@ -1,8 +1,10 @@
-﻿# дано число. Если оно лежит в (-100 до 100) вывести True иначе False
+﻿# вводится три числа. если все числа больше 10 то вывести True иначе False
 
 a = int(input())
+b = int(input())
+c = int(input())
 
-if a >= (-100) and a <= 100:
+if a and b and c > 10:
     print(True)
 else:
     print(False)
