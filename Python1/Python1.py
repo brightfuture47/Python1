@@ -1,26 +1,14 @@
-# ���������� ��������
-# and:
-# True and True -> True
-# False and true -> False
-a = 23
-b = 56
-c = a > 10 and b <100
-#print(c) ->true
+﻿#условниые конструкции
+# if Логическое_выражение:
+#    инструкция (начнинается с новой строки и с отступами)
 
-# or 
-# True or True -> True
-# True or False -> True
-# False or False -> False
-a = 24
-b = 24
-c = a == b or a>100 or b<50
-#print(c) -> True
-
-#not
-#not True -> False
-#not False -> True
-a = 23
-c = a>10
-# print (c) -> True
-c = not a > 10
-# print (c) -> False
+a = 56
+if a > 5:
+    print(True)
+    print("end")
+    if a > 0:
+        print ("Вложенная конструкция")
+elif a < 5:
+    print ("Сработал elif")
+else:
+    print("if возвращает False")
