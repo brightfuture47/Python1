@@ -1,38 +1,18 @@
-﻿# написать калькулятор
-# + - / * mod(остаток от деления) pow(возведение в степень) div(остаток от деления
-# деление на ноль - ошибка
+﻿# написать программу которая получает 3 целых числа
+# выводи на экран сначала максимальное затем минимальное а после оставшееся
 
-a = float(input())
-b = float(input())
+a = int(input())
+b = int(input())
+c = int(input())
 
-operation = input()
+if a < b:
+    a, b = b, a
 
-if operation == "+":
-    print (a + b)
+if a < c:
+    a, c = c, a
 
-elif operation == "-":
-    print (a - b)
-
-elif operation == "/":
-    if b == 0:
-        print("Ошибка!")
-    else:
-        print (a / b)
-
-elif operation == "*":
-    print (a * b)
-
-elif operation == "mod":
-    if b == 0:
-        print("Ошибка!")
-    else:
-        print (a * b)
-
-elif operation == "pow":
-    print (a ** b)
-
-elif operation == "div":
-    if b == 0:
-        print("Ошибка!")
-    else:
-        print (a // b)
+if b > c:
+    b, c = c, b
+print (a)
+print (b)
+print (c)
